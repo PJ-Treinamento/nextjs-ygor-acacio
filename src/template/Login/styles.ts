@@ -1,0 +1,134 @@
+import styled from 'styled-components';
+
+// interface Props{
+//     widthInput:boolean;
+// };
+//   interface pProps{
+//     colorFooter:boolean
+//     marginFooter?:boolean
+//     sizeFooter?: boolean
+//     cursorFooter?: boolean
+//   }
+
+export const LoginScreen = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: center;
+    margin: 0rem;
+    padding: 0%;
+    background-color: rgba(149, 213, 178, 0.5);
+`;
+
+export const NavBar = styled.nav`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(82, 183, 136, 1);
+    padding: 0.8rem;
+`;
+
+export const LogoPiuPiuwer = styled.img`
+    width: 5rem;
+    height: 5rem;
+`;
+
+export const Section = styled.section`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    height: 90vh;
+`;
+
+export const LoginBox = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(245, 243, 243, 1);
+    border-radius: 0.8rem;
+    min-width: 47rem;
+    height: 50rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    @media (min-width: 1100px) {
+        min-width: 49rem;
+    }
+`;
+
+export const Tittle = styled.h2`
+    margin-top: 1.5rem;
+    font-size: 3.5rem;
+    font-weight: normal;
+    font-family: Roboto;
+
+    @media (min-width: 1100px) {
+        font-size: 4.2rem;
+    }
+`;
+
+export const LoginInput = styled.input`
+    border-radius: 0.8rem;
+    border-style: solid;
+    border-width: 0.08rem;
+    border-color: rgb(227, 227, 227);
+    width: 40rem;
+    height: 4rem;
+
+    ::placeholder {
+        font-size: 1.6rem;
+        padding-left: 0.8rem;
+        color: rgba(128, 126, 126, 1);
+    }
+
+    :focus {
+        outline-width: 0;
+    }
+
+    @media (min-width: 1100px) {
+        width: 44rem;
+        height: 5.4rem;
+    }
+`;
+
+export const Button = styled.button`
+    width: 40rem;
+    height: 4rem;
+    border-radius: 0.8rem;
+    border-style: none;
+    background-color: rgba(45, 106, 79, 1);
+    color: rgb(227, 227, 227);
+    font-size: 2.4rem;
+    cursor: pointer;
+
+    :hover {
+        background-color: rgb(32, 82, 60);
+    }
+
+    @media (min-width: 1100px) {
+        width: 44rem;
+        height: 5.4rem;
+        font-size: 3rem;
+    }
+`;
+
+export const P = styled.p`
+    font-family: Roboto;
+    font-size: 1.2rem;
+    text-decoration: none;
+
+    @media (min-width: 1100px) {
+        font-size: 1.6rem;
+    }
+`;
+
+export const Footer = styled.footer`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block-end: 1.5rem;
+`;
+//   export const Copyright = styled.img`
+//     width: 1.5rem;
+//   `
